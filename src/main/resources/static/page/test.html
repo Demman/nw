@@ -1,0 +1,19 @@
+<script type="text/javascript" src="/static/page/js/ThreeWebGL.js"></script>
+<script type="text/javascript" src="/static/page/test.js"></script>
+<!-- html -->
+<h5>canvas2d</h5>
+<canvas id="canvas2d" width="1000" height="1000">
+    Please use a browser that supports "canvas"
+</canvas>
+<script>
+// js
+// 获取元素引用
+var canvas2d = document.getElementById('canvas2d');
+// 获取2D context
+var ctx = canvas2d.getContext('2d');
+
+// 设置填充色
+ctx.fillStyle = 'rgba(255, 0, 255, 0.75)';
+// 绘制矩形块
+ctx.fillRect(200, 100, 200, 200);
+</script>

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: nw2-web
+  profiles:
+    active: dev
+  mvc:
+    view:
+      prefix: /static/page
+      suffix: .html
+    static-path-pattern: /static/**
+#mybatis配置
+mybatis:
+  type-aliases-package: com.web.bean
+  mapper-locations: classpath:mapper/*.xml
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
+
+
